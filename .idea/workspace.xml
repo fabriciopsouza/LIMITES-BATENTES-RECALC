@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AIVI-RECALCULOBatentesLimites.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AIVI-LIMITES-BATENTES-RECALC.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="git it" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fabriciopsouza/LIMITES-BATENTES-RECALC",
+    "accountId": "680c4b7e-e13c-49f9-bb45-40559b082679"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -76,12 +72,25 @@
       <workItem from="1759842869177" duration="14227000" />
       <workItem from="1759870306645" duration="37416000" />
       <workItem from="1759933740547" duration="12000" />
-      <workItem from="1759948395957" duration="1362000" />
+      <workItem from="1759948395957" duration="1699000" />
     </task>
+    <task id="LOCAL-00001" summary="git it">
+      <option name="closed" value="true" />
+      <created>1759951320996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759951320996</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git it" />
+    <option name="LAST_COMMIT_MESSAGE" value="git it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
