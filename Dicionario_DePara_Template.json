@@ -1,0 +1,247 @@
+{
+  "projeto": "AIVI - Sistema de Validação de Variações Internas",
+  "versao": "1.0",
+  "ultima_atualizacao": "2025-01-14",
+  "descricao": "Dicionário DE-PARA para mapeamento de campos entre diferentes fontes de dados",
+
+  "SAP_YSMM_VI_ACOMP": {
+    "fonte": "SAP - Transação YSMM_VI_ACOMP",
+    "periodicidade": "Mensal",
+    "descricao": "Dados de acompanhamento de variação interna por base",
+    "campos": {
+      "Centro": {
+        "nome_padrao": "Centro",
+        "tipo": "int64",
+        "descricao": "Código numérico da base operacional",
+        "sinonimos": ["Código de Centro", "Cod Centro", "Centro Operacional", "CD"],
+        "obrigatorio": true,
+        "exemplo": 5025
+      },
+      "Sigla": {
+        "nome_padrao": "Sigla",
+        "tipo": "object",
+        "descricao": "Sigla da base (código alfabético)",
+        "sinonimos": ["Sigla Base", "Codigo Base", "Base"],
+        "obrigatorio": true,
+        "exemplo": "BARE"
+      },
+      "Nome da Base": {
+        "nome_padrao": "Nome da Base",
+        "tipo": "object",
+        "descricao": "Nome completo da base operacional",
+        "sinonimos": ["Nome Base", "Base Nome", "Descricao Base"],
+        "obrigatorio": false,
+        "exemplo": "Base Recife"
+      },
+      "Cód Grupo de produto": {
+        "nome_padrao": "Cód Grupo de produto",
+        "tipo": "object",
+        "descricao": "Código único do produto/grupo de produto",
+        "sinonimos": ["Código Produto", "CodGrupoProduto", "Produto", "Cod Produto"],
+        "obrigatorio": true,
+        "exemplo": "DIESEL_S10_SIMPLES"
+      },
+      "Grupo de produto": {
+        "nome_padrao": "Grupo de produto",
+        "tipo": "object",
+        "descricao": "Nome do grupo de produto",
+        "sinonimos": ["Nome Produto", "Descricao Produto"],
+        "obrigatorio": false,
+        "exemplo": "Diesel S-10"
+      },
+      "Período": {
+        "nome_padrao": "Período",
+        "tipo": "datetime64",
+        "descricao": "Mês/Ano de referência dos dados",
+        "sinonimos": ["Data", "Mes", "MesAno", "Periodo", "Data Referencia"],
+        "obrigatorio": true,
+        "exemplo": "2024-01-01",
+        "formato": "YYYY-MM-DD"
+      },
+      "Expedição c/ Veículo": {
+        "nome_padrao": "Expedição c/ Veículo",
+        "tipo": "float64",
+        "descricao": "Volume expedido em litros",
+        "sinonimos": ["Expedicao Veiculo", "Expedicao", "Volume Expedido", "Expedicao Litros"],
+        "obrigatorio": true,
+        "exemplo": 1500000.0,
+        "unidade": "litros"
+      },
+      "Variação Interna": {
+        "nome_padrao": "Variação Interna",
+        "tipo": "float64",
+        "descricao": "Diferença entre estoque contábil e físico (litros)",
+        "sinonimos": ["Variacao Interna", "VI", "Variacao", "Diferenca Estoque"],
+        "obrigatorio": true,
+        "exemplo": -5000.0,
+        "unidade": "litros",
+        "interpretacao": "Negativo = falta | Positivo = sobra"
+      },
+      "% VI": {
+        "nome_padrao": "% VI",
+        "tipo": "float64",
+        "descricao": "Percentual de variação interna em relação à expedição",
+        "sinonimos": ["Percentual VI", "Pct VI", "VI Percentual", "Variacao Percentual"],
+        "obrigatorio": true,
+        "exemplo": -0.0033,
+        "formula": "(Variação Interna / Expedição c/ Veículo) * 100",
+        "unidade": "percentual decimal (ex: 0.05 = 5%)"
+      },
+      "LI Atual (%)": {
+        "nome_padrao": "LI Atual (%)",
+        "tipo": "float64",
+        "descricao": "Limite Inferior atual do indicador AIVI",
+        "sinonimos": ["Limite Inferior", "LI", "LimiteInferior"],
+        "obrigatorio": false,
+        "exemplo": -0.08
+      },
+      "LS Atual (%)": {
+        "nome_padrao": "LS Atual (%)",
+        "tipo": "float64",
+        "descricao": "Limite Superior atual do indicador AIVI",
+        "sinonimos": ["Limite Superior", "LS", "LimiteSuperior"],
+        "obrigatorio": false,
+        "exemplo": 0.08
+      },
+      "Status Homologação": {
+        "nome_padrao": "Status Homologação",
+        "tipo": "object",
+        "descricao": "Status do processo de homologação de limites",
+        "sinonimos": ["Status", "Situacao", "Status Limite"],
+        "obrigatorio": false,
+        "exemplo": "Homologado"
+      }
+    }
+  },
+
+  "PORTAL_ESO": {
+    "fonte": "SharePoint - Portal ESO (Solicitações)",
+    "periodicidade": "Sob demanda",
+    "descricao": "Lista de solicitações de alteração de limites AIVI",
+    "campos": {
+      "Unidade Operacional:Centro": {
+        "nome_padrao": "Centro",
+        "tipo": "int64",
+        "mapeamento_para": "SAP_YSMM_VI_ACOMP.Centro",
+        "observacao": "Mesmo conceito, campo composto no ESO"
+      },
+      "Produto": {
+        "nome_padrao": "Cód Grupo de produto",
+        "tipo": "object",
+        "mapeamento_para": "SAP_YSMM_VI_ACOMP.Cód Grupo de produto"
+      },
+      "Limite Inferior Solicitado": {
+        "nome_padrao": "LI Solicitado (%)",
+        "tipo": "float64",
+        "descricao": "Novo limite inferior solicitado"
+      },
+      "Limite Superior Solicitado": {
+        "nome_padrao": "LS Solicitado (%)",
+        "tipo": "float64",
+        "descricao": "Novo limite superior solicitado"
+      },
+      "Justificativa": {
+        "nome_padrao": "Justificativa",
+        "tipo": "object",
+        "descricao": "Texto livre com justificativa da solicitação"
+      }
+    }
+  },
+
+  "BEX_ESTOQUE_MOVIMENTACAO": {
+    "fonte": "SAP BEx - Estoque e Movimentação",
+    "periodicidade": "Diária",
+    "descricao": "Dados de estoque e movimentação para análises complementares",
+    "integracao_com": ["SAP_YSMM_VI_ACOMP"],
+    "campos": {
+      "Centro": {
+        "nome_padrao": "Centro",
+        "tipo": "int64",
+        "mapeamento_para": "SAP_YSMM_VI_ACOMP.Centro"
+      },
+      "Material": {
+        "nome_padrao": "Cód Grupo de produto",
+        "tipo": "object",
+        "mapeamento_para": "SAP_YSMM_VI_ACOMP.Cód Grupo de produto",
+        "observacao": "Nomenclatura diferente, mesmo conceito"
+      },
+      "Estoque Contábil": {
+        "nome_padrao": "Estoque Contábil",
+        "tipo": "float64",
+        "descricao": "Estoque segundo sistema (litros)",
+        "unidade": "litros"
+      },
+      "Estoque Físico": {
+        "nome_padrao": "Estoque Físico",
+        "tipo": "float64",
+        "descricao": "Estoque medido fisicamente (litros)",
+        "unidade": "litros"
+      }
+    }
+  },
+
+  "CAMPOS_CALCULADOS": {
+    "descricao": "Campos criados durante processamento (não vem dos arquivos)",
+    "campos": {
+      "Flag_Outlier_% VI": {
+        "tipo": "bool",
+        "formula": "True se % VI < Q1-3*IQR OU % VI > Q3+3*IQR",
+        "descricao": "Identifica valores extremos em % VI"
+      },
+      "Flag_Outlier_Expedição": {
+        "tipo": "bool",
+        "formula": "True se Expedição < Q1-3*IQR OU Expedição > Q3+3*IQR",
+        "descricao": "Identifica volumes de expedição extremos"
+      },
+      "Flag_Dados_Incompletos": {
+        "tipo": "bool",
+        "formula": "True se Centro OU Produto OU Expedição é NULL",
+        "descricao": "Identifica registros com campos críticos vazios"
+      },
+      "Flag_VI_Impossivel": {
+        "tipo": "bool",
+        "formula": "True se abs(Variação Interna) > Expedição c/ Veículo",
+        "descricao": "Identifica VIs impossíveis (maior que expedição total)"
+      },
+      "Flag_Expedicao_Zero": {
+        "tipo": "bool",
+        "formula": "True se Expedição c/ Veículo = 0",
+        "descricao": "Identifica risco de divisão por zero"
+      },
+      "Flag_Limites_Invalidos": {
+        "tipo": "bool",
+        "formula": "True se LI Atual (%) >= LS Atual (%)",
+        "descricao": "Identifica limites com ordem invertida"
+      },
+      "Flag_Dados_Suspeitos": {
+        "tipo": "bool",
+        "formula": "True se qualquer outra flag é True",
+        "descricao": "Flag agregador - identifica qualquer anomalia"
+      }
+    }
+  },
+
+  "METADADOS_VALIDACAO": {
+    "tipos_esperados": {
+      "Centro": "int64",
+      "Sigla": "object",
+      "Cód Grupo de produto": "object",
+      "Período": "datetime64[ns]",
+      "Expedição c/ Veículo": "float64",
+      "Variação Interna": "float64",
+      "% VI": "float64",
+      "LI Atual (%)": "float64",
+      "LS Atual (%)": "float64"
+    },
+    "campos_obrigatorios": [
+      "Centro",
+      "Cód Grupo de produto",
+      "Expedição c/ Veículo"
+    ],
+    "conversoes_especiais": {
+      "Centro": "Remover zeros à esquerda, converter para int",
+      "Período": "Aceitar formatos: YYYY-MM-DD, YYYYMM, MM/YYYY",
+      "Numéricos": "Substituir separadores: '.' → '', ',' → '.'"
+    }
+  }
+}

@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="git it">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO v3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dicionario_DePara_Template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS 5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS v3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SUB1_CasosTeste.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIVI-LIMITES-BATENTES-RECALC.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AIVI-LIMITES-BATENTES-RECALC.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
+        <option value="TypeScript File" />
         <option value="Jupyter Notebook" />
       </list>
     </option>
@@ -53,6 +68,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fpsou/PycharmProjects/AIVI-RECALCULOBatentesLimites&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -61,6 +77,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fpsou\PycharmProjects\AIVI-RECALCULOBatentesLimites" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fpsou\PycharmProjects\AIVI-RECALCULOBatentesLimites\OLD" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +109,15 @@
       <workItem from="1760039671664" duration="826000" />
       <workItem from="1760102549494" duration="1198000" />
       <workItem from="1760130011761" duration="1521000" />
-      <workItem from="1760326977724" duration="788000" />
+      <workItem from="1760326977724" duration="20795000" />
+      <workItem from="1760442300312" duration="1396000" />
+      <workItem from="1760452774130" duration="578000" />
+      <workItem from="1760453461115" duration="2018000" />
+      <workItem from="1760463868566" duration="10953000" />
+      <workItem from="1760528419707" duration="23032000" />
+      <workItem from="1760582899110" duration="9044000" />
+      <workItem from="1760637209173" duration="44432000" />
+      <workItem from="1760805985443" duration="24509000" />
     </task>
     <task id="LOCAL-00001" summary="git it">
       <option name="closed" value="true" />
@@ -103,7 +135,31 @@
       <option name="project" value="LOCAL" />
       <updated>1759951616923</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="git it">
+      <option name="closed" value="true" />
+      <created>1760416234240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760416234240</updated>
+    </task>
+    <task id="LOCAL-00004" summary="git it">
+      <option name="closed" value="true" />
+      <created>1760416249528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760416249528</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git it">
+      <option name="closed" value="true" />
+      <created>1760489109596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760489109596</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
