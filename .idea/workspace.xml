@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="VERSÃO FUNCIONAL">
-      <change afterPath="$PROJECT_DIR$/MESCLAR DICIONARIOS MULTIPLOS.ipynb" afterDir="false" />
+    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="VERSÃO FUNCIONAL REVISADA E AMPLIADA&#10;TESTADA COM 2 ARQUIVOS DIFERENTES">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" afterDir="false" />
     </list>
@@ -105,7 +104,7 @@
       <workItem from="1760528419707" duration="23032000" />
       <workItem from="1760582899110" duration="9044000" />
       <workItem from="1760637209173" duration="44432000" />
-      <workItem from="1760805985443" duration="30746000" />
+      <workItem from="1760805985443" duration="38118000" />
     </task>
     <task id="LOCAL-00001" summary="git it">
       <option name="closed" value="true" />
@@ -155,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760851954834</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="VERSÃO FUNCIONAL REVISADA E AMPLIADA&#10;TESTADA COM 2 ARQUIVOS DIFERENTES">
+      <option name="closed" value="true" />
+      <created>1760858034676</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760858034676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +171,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git it" />
     <MESSAGE value="VERSÃO FUNCIONAL" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSÃO FUNCIONAL" />
+    <MESSAGE value="VERSÃO FUNCIONAL REVISADA E AMPLIADA&#10;TESTADA COM 2 ARQUIVOS DIFERENTES" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSÃO FUNCIONAL REVISADA E AMPLIADA&#10;TESTADA COM 2 ARQUIVOS DIFERENTES" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
