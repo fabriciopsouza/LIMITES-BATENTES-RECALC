@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="git it">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO v2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO v3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AIVI-INTEGRAÇÃO.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dicionario_DePara_Template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS 5.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS v2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS v3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLD/PROCESSAR ARQUIVOS DESCONHECIDOS.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SUB1_CasosTeste.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="8c2f6c05-486f-4df7-825b-1445655300e4" name="Changes" comment="VERSÃO FUNCIONAL">
+      <change afterPath="$PROJECT_DIR$/MESCLAR DICIONARIOS MULTIPLOS.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PROCESSAR ARQUIVOS DESCONHECIDOS 4.2.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +105,7 @@
       <workItem from="1760528419707" duration="23032000" />
       <workItem from="1760582899110" duration="9044000" />
       <workItem from="1760637209173" duration="44432000" />
-      <workItem from="1760805985443" duration="24509000" />
+      <workItem from="1760805985443" duration="30746000" />
     </task>
     <task id="LOCAL-00001" summary="git it">
       <option name="closed" value="true" />
@@ -159,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760489109596</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="VERSÃO FUNCIONAL">
+      <option name="closed" value="true" />
+      <created>1760851954834</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760851954834</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +163,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git it" />
-    <option name="LAST_COMMIT_MESSAGE" value="git it" />
+    <MESSAGE value="VERSÃO FUNCIONAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSÃO FUNCIONAL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
